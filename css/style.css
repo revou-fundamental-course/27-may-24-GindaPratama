@@ -1,13 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: white;
     margin: 0;
     padding-bottom: 60px;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 /* Nav */
@@ -41,7 +41,7 @@ nav.fixed-header {
     display: flex;
     gap: 20px;
     width: 100%;
-    padding-left: 950px;
+    padding-left: 900px;
 }
 
 nav div a {
@@ -144,8 +144,8 @@ nav div a:hover {
     position: relative;
     border-top: 5px solid gray;
     width: 200px;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 74px;
+    margin-bottom: 88px;
 }
 
 .second-line {
@@ -158,13 +158,14 @@ nav div a:hover {
 }
 
 .our-facili {
-    margin-left: 40px;
+    margin-left: 45px;
+    margin-bottom: 10px;
 }
 
 .text-overlay {
     margin-top: 35px;
     margin-right: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 128px;
     margin-left: 40px;
     padding: 20px;
     color: whitesmoke;
@@ -178,41 +179,23 @@ nav div a:hover {
 }
 
 /* Form */
-.form {
-    display: flex;
-    flex-direction: column;
-}
-
-.table-row {
+.article.form table .table-row{
     display: flex;
     flex-direction: row;
-    margin-bottom: 15px;
+    flex: 1;
+    margin-bottom: 10px;
 }
-
-.label {
+article.form table .table-row td.label{
     width: 150px;
 }
-
-.input-table {
-    margin-left: 10px;
+article.form table .table-row td.input-table{
+    margin-left: 5px;
 }
-
-.input-text {
-    width: 100%;
-    padding: 5px;
+article.form table .table-row td.input-table .input-text{
+    width: 200px;
 }
-
-#btn-submit {
-    width: 30%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#btn-submit:hover {
-    background-color: #555;
+article.form input#btn-submit{
+    width: 361px;
 }
 
 .message-us-form {
@@ -238,7 +221,7 @@ nav div a:hover {
 
 /* Result Container */
 .result-container {
-    margin-top: -332px;
+    margin-top: -255px;
     margin-left: 677px;
     position: absolute;
 }
@@ -276,7 +259,7 @@ footer {
     }
 
     .banner-container, .banner-container-two {
-        height: 200px;
+        height: 100px;
         width: 100%; /* tambahkan */
     }
 
