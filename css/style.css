@@ -158,83 +158,81 @@ nav div a:hover {
 }
 .message-us{
     padding-bottom: 40px;
-   }
-   
-   .message-us-section{
-       display: flex;
-       flex: 1;
-       justify-content:left;
-       align-content: center;
-   }
-   
-   .form-container{
-       flex: 1;
-       margin-right: 40px;
-   }
-   
-   form {
-       margin-left:40px;
-       padding: 20px;
-       border: 1px solid black;
-       border-radius: 10px;
-       background-color: gray;
-       min-width: fit-content;
-   }
-   
-   .form-group {
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       margin-bottom: 15px;
-   }
-   
-   .form-group label {
-       width: 30%;
-       margin-right: 0px;
-       color: black;
-   }
-   
-   .form-group input, .form-group select, .form-group textarea {
-       width: 70%;
-       padding: 10px;
-       border: 1px solid black;
-       border-radius: 5px;
-       font-size: 16px;
-       color: #000000;
-   }
-   
-   button {
-       width: 100%;
-       padding: 10px;
-       background-color: black;
-       color: white;
-       border: none;
-       border-radius: 5px;
-       cursor: pointer;
-       font-size: 16px;
-   }
-   
-   button:hover {
-       background-color: blue;
-   }
+}
+.message-us-section{
+    display: flex;
+    flex: 1;
+    justify-content:left;
+    align-content: center;
+}   
 
-   /* Textarea*/
-   .result-container{
-       flex: 1;
-       margin-left: 40px;
-       margin-right: 40px;
-       min-width: fit-content;
-   }
-   
-   /* Menampilkan submit message */
-   .form-result textarea{
-       height: 364px;
-       width: 94%;
-       border: 1px solid black;
-       border-radius: 8px;
-       min-width: fit-content;
-       font-size: 14px;
-   }
+.form-container{
+    flex: 1;
+    margin-right: 40px;
+}   
+
+form {
+    margin-left:40px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    min-width: fit-content;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 30%;
+    margin-right: 0px;
+    color: black;
+}   
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000000;
+}   
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+/* Textarea*/
+.result-container{
+    flex: 1;
+    margin-left: 40px;
+    margin-right: 40px;
+    min-width: fit-content;
+}
+
+/* Menampilkan submit message */
+.form-result textarea{
+    height: 364px;
+    width: 94%;
+    border: 1px solid black;
+    border-radius: 8px;
+    min-width: fit-content;
+    font-size: 14px;
+}
 
 /* Footer */
 footer {

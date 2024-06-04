@@ -3,7 +3,6 @@ document.getElementById('formulir').addEventListener('submit', function(event) {
 
     const now = new Date();
     const dateTimeString = now.toLocaleString();
-   
     const nama = document.getElementById('nama').value;
     const tglLahir = document.getElementById('tglLahir').value;
     const jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked').value;
