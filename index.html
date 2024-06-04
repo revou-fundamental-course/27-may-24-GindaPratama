@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/1.ico">
 </head>
 <body>
+
     <!-- Nav -->
     <nav class="fixed-header">
         <div class="nav-container">
@@ -17,16 +18,20 @@
 
             <div class="nav-links">
                 <a href="#profile">PROFILE</a>
-                <a href="#search">SKILLS</a>
+                <a href="#skill">SKILLS</a>
                 <a href="#message">MESSAGE</a>
             </div>
         </div>
     </nav>
 
+
+
+
 <main>
     <!-- Profile -->
     <section id="profile">
         <header>
+
             <!-- Banner -->
             <div class="banner-container">
                 <div class="banner-size">
@@ -44,10 +49,12 @@
                 <p>Perkasa 2 Vocational School</p>
                 <p>Department of computer and network engineering</p>
             </div>
+
             <!-- Profile Picture -->
             <div class="profile-pic">
                 <img src="/assets/profil.png" alt="Profile">
             </div>
+
             <!--text about me-->
             <div class="p-text">
                 <p>Ginda Nugraha Pratama is a Junior Software engineer at RevoU. He is currently studying Software Engineering at RevoU</p>
@@ -58,106 +65,84 @@
     </section>
 
     <!-- Skill -->
-    <section id="search">
+    <section id="skill">
         <header>
             <hr class="first-line">
             <h1 class="our-facili">SKILLS</h1>
             <hr class="second-line">
         </header>
 
-        <article>
-            <div class="text-overlay">
-                <div class="skl1">
-                    <ul>
-                        <li type="square">Troubleshooting</li>
-                        <li type="square">Installation & Configuration Network</li>
-                        <li type="square">Network Monitoring</li>
-                        <li type="square">Microsoft Office</li>
-                        <li type="square">HTML</li>
-                        <li type="square">CSS</li>
-                        <li type="square">JavaSCript</li>
-                    </ul>
-                </div>    
-            </div>
-        </article>
-    </section>
-
-    <!--Message-->
-    <section id="message">
-        <header>
-            <div class="banner-container-two">
-                <div class="banner-size-two">
-                    <div class="banner-position-two">
-                        <img src="/assets/banner2.jpg" class="banner-two-size" alt="banner two">
-                    </div>
+            <article>
+                <div class="text-overlay">
+                    <div class="skl1">
+                        <ul>
+                            <li type="square">Troubleshooting</li>
+                            <li type="square">Installation & Configuration Network</li>
+                            <li type="square">Network Monitoring</li>
+                            <li type="square">Microsoft Office</li>
+                            <li type="square">HTML</li>
+                            <li type="square">CSS</li>
+                            <li type="square">JavaSCript</li>
+                        </ul>
+                    </div>    
                 </div>
-            </div>
-            <h1 class="mess">Message From me</h1>
+            </article>
+        </section>
+
+    <!-- Message -->
+    <section class="message-us" id="message-us">
+        <header class="mess">
+            <h2>Message For me</h2>
         </header>
 
-        <section class="message-us-form">
-
+        <section class="message-us-section">
             <!-- form -->
-            <section>
-                <form>
-                    <article class="form">
-                        <table>
-                            <tr class="table-row">
-                                <td class="label">Nama</td>
-                                <td>:</td>
-                                <td class="input-table"><input id="name" type="text" class="input-text" placeholder="Nama" required></td>
-                            </tr>
-                            <tr class="table-row">
-                                <td class="label">Tanggal Lahir</td>
-                                <td>:</td>
-                                <td class="input-table"><input type="date" class="input-text" required></td>
-                            </tr>
-                            <tr class="table-row">
-                                <td class="label">Jenis Kelamin</td>
-                                <td>:</td>
-                                <td class="input-table">
-                                    <input id="laki-laki" type="radio" value="laki-laki" name="jns_klm" required>
-                                    <label for="laki-laki">Laki-laki</label>
-                                    <input id="perempuan" type="radio" value="perempuan" name="jns_klm" required>
-                                    <label for="perempuan">Perempuan</label>
-                                </td>
-                            </tr>
-                            <tr class="table-row">
-                                <td class="label">Pesan</td>
-                                <td>:</td>
-                                <td class="input-table"><textarea rows="7" placeholder="Ketik disini..." class="input-text"></textarea></td>
-                            </tr>
-                        </table>
-                        <input type="submit" id="btn-submit" name="submit" value="Submit">
-                    </article>
+            <section class="form-container">
+                <form id="formulir">
+                    <div class="form-group">
+                        <label for="nama" class="">Nama :</label>
+                        <input type="text" id="nama" name="nama" placeholder="Kyle Trin">
+                    </div>
+                    <div class="form-group">
+                        <label for="tglLahir" class="">Tanggal Lahir :</label>
+                        <input type="date" id="tglLahir" name="tglLahir"> <br>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label><br>
+                        <input type="radio" id="lakilaki" name="jenisKelamin" value="Laki-laki" required>
+                        <label for="lakilaki">Laki-laki</label><br>
+                        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan :</label>
+                        <textarea id="pesan" name="pesan" rows="4" required placeholder="Tetap semangat belajar di Era digital!!"></textarea> <br>
+                    </div>
+                    <button type="submit" id="submit">Kirim</button>
+                    
                 </form>
+               
             </section>
+
+            <!-- Result -->
+            <section class="result-container">
+                <div class="form-result">
+                    <textarea id="result" rows="15" cols="20" readonly></textarea>
+                </div>
+            </section>
+
         </section>
     </section>
 
-    <!-- Result -->
-    <section class="result-container">
-        <div class="form-result">
-            <header>
-                <p class="crtime"><b>Current time : </b>Fri Jun 27 2024 11:25:12 GMT</p>
-            </header>
-                        <article>
-                            <p class="name"><b>Nama : </b>Ginda Nugraha Pratama
-                                <br>
-                                <b>Tanggal Lahir : </b>30/11/2005<br>
-                                <b>Jenis Kelamin : </b>Laki - Laki<br>
-                                <b>Pesan : </b>Terus semangat belajar di Era digital ini</p>
-                        </article>
-                    </div>
-                </section>
-            </section>
-        </section>
     </section>
 </main>
-<section>
-    <footer>
-        <p>&copy; Created 2024 by Ginda Nugraha Pratama.</p>
-    </footer>
-</section>
+<!-- Akhir content -->
+
+        <section>
+            <footer>
+                <p>&copy; Created 2024 by Ginda Nugraha Pratama.</p>
+        </footer>
+                <script src="/js/script.js"></script>
+    </section>
 </body>
 </html>

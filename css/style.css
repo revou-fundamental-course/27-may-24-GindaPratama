@@ -1,9 +1,6 @@
-* {
-    box-sizing: border-box;
-}
-
+/* Style body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: serif;
     line-height: 1.6;
     background-color: white;
     margin: 0;
@@ -13,7 +10,7 @@ body {
 /* Nav */
 nav.fixed-header {
     width: 100%;
-    background-color: rgb(90, 91, 95);
+    background-color: rgb(129, 129, 122);
     color: #fff;
     padding: 10px 20px;
     position: fixed;
@@ -64,31 +61,6 @@ nav div a:hover {
 }
 
 .banner-container img {
-    width: 100%;
-    height: auto;
-}
-.banner-container-two img {
-    display: inline-block;
-    width: 1260px;
-    height: 500px;
-    margin: inherit;
-    overflow: visible;
-    filter: brightness(0.3);
-}
-
-.banner-container-two {
-    position: relative;
-}
-
-.banner-size-two {
-    position: relative;
-}
-
-.banner-position-two {
-    position: relative;
-}
-
-.banner-two-size {
     width: 100%;
     height: auto;
 }
@@ -178,63 +150,91 @@ nav div a:hover {
     font-size: 1.0em;
 }
 
-/* Form */
-.article.form table .table-row{
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    margin-bottom: 10px;
-}
-article.form table .table-row td.label{
-    width: 150px;
-}
-article.form table .table-row td.input-table{
-    margin-left: 5px;
-}
-article.form table .table-row td.input-table .input-text{
-    width: 200px;
-}
-article.form input#btn-submit{
-    width: 361px;
-}
-
-.message-us-form {
-    position: relative;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 2;
-    margin-top: -353px;
-    margin-left: 70px;
-    color: white;
-}
-
+/* form */
 .mess {
-    position: absolute;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 2;
-    margin-left: 82px;
-    margin-top: -407px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 40px;
 }
+.message-us{
+    padding-bottom: 40px;
+   }
+   
+   .message-us-section{
+       display: flex;
+       flex: 1;
+       justify-content:left;
+       align-content: center;
+   }
+   
+   .form-container{
+       flex: 1;
+       margin-right: 40px;
+   }
+   
+   form {
+       margin-left:40px;
+       padding: 20px;
+       border: 1px solid black;
+       border-radius: 10px;
+       background-color: gray;
+       min-width: fit-content;
+   }
+   
+   .form-group {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       margin-bottom: 15px;
+   }
+   
+   .form-group label {
+       width: 30%;
+       margin-right: 0px;
+       color: black;
+   }
+   
+   .form-group input, .form-group select, .form-group textarea {
+       width: 70%;
+       padding: 10px;
+       border: 1px solid black;
+       border-radius: 5px;
+       font-size: 16px;
+       color: #000000;
+   }
+   
+   button {
+       width: 100%;
+       padding: 10px;
+       background-color: black;
+       color: white;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+       font-size: 16px;
+   }
+   
+   button:hover {
+       background-color: blue;
+   }
 
-/* Result Container */
-.result-container {
-    margin-top: -255px;
-    margin-left: 677px;
-    position: absolute;
-}
-
-.form-result {
-    padding: 20px;
-    color: whitesmoke;
-    border-radius: 10px;
-}
-
-.crtime, .name {
-    margin-bottom: 10px;
-}
+   /* Textarea*/
+   .result-container{
+       flex: 1;
+       margin-left: 40px;
+       margin-right: 40px;
+       min-width: fit-content;
+   }
+   
+   /* Menampilkan submit message */
+   .form-result textarea{
+       height: 364px;
+       width: 94%;
+       border: 1px solid black;
+       border-radius: 8px;
+       min-width: fit-content;
+       font-size: 14px;
+   }
 
 /* Footer */
 footer {
@@ -242,82 +242,11 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
-    color: white;
+    background-color: rgb(129, 129, 122);
+    color: black;
     text-align: center;
     padding: 10px 0;
     z-index: 3;
-    height: 72px;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%; /* tambahkan */
-    }
-
-    .banner-container, .banner-container-two {
-        height: 100px;
-        width: 100%; /* tambahkan */
-    }
-
-    .profile-text {
-        margin-top: 20px;
-    }
-
-    .profile-text h1 {
-        font-size: 1.5em;
-    }
-
-    .profile-text p {
-        font-size: 1em;
-    }
-
-    .first-line, .second-line, .third-line {
-        width: 80%;
-    }
-
-    .text-overlay {
-        margin: 10px;
-        padding: 10px;
-        font-size: 0.9em;
-    }
-
-    .form {
-        margin: 20px auto; /* ubah margin */
-        max-width: 400px; /* tambahkan */
-    }
-
-    .form input#btn-submit {
-        margin-top: 10px;
-    }
-
-    .message-us-form, .result-container {
-        margin: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .banner-container, .banner-container-two {
-        height: 150px;
-    }
-
-    .profile-pic {
-        width: 100px;
-        height: 100px;
-    }
-
-    .profile-text h1 {
-        font-size: 1.2em;
-    }
-
-    .profile-text p {
-        font-size: 0.9em;
-    }
-
-    .text-overlay h2 {
-        font-size: 1.2em;
-    }
+    height: 40px;
+    text-align: center;
 }
