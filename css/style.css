@@ -27,7 +27,7 @@ nav.fixed-header {
 }
 
 .logo {
-    width: 55px;
+    width: 50px;
     height: 47px;
     border-radius: 50%;
     display: flex;
@@ -83,6 +83,16 @@ nav div a:hover {
 .profile-text p {
     margin: 4px 0;
     font-size: 1.2em;
+}
+
+/* Ubah nama */
+
+#tombol {
+    width: 120px;
+    background-color: gray;
+    margin-left: 10px;
+    top: 80px;
+    position: absolute;
 }
 
 /* Profile Picture */

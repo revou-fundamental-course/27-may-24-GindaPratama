@@ -1,3 +1,13 @@
+// Masukan nama //
+function replaceName() {
+    let namaProfile = prompt("siapa nama kamu?", "");
+    document.getElementById("namaProfile").innerHTML = namaProfile
+}
+
+replaceName();
+
+document.getElementById("tombol").addEventListener("click", function(){replaceName()})
+
 document.getElementById('formulir').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -13,4 +23,3 @@ document.getElementById('formulir').addEventListener('submit', function(event) {
     document.getElementById('result').value = resultText;
 
 });
-
