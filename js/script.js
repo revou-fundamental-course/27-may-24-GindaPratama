@@ -5,9 +5,10 @@ function replaceName() {
 }
 
 replaceName();
-
+// Merubah nama //
 document.getElementById("tombol").addEventListener("click", function(){replaceName()})
 
+// Hasil input data //
 document.getElementById('formulir').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -24,23 +25,26 @@ document.getElementById('formulir').addEventListener('submit', function(event) {
 
 });
 
-let indexSlide = 1;
-showBanner(1);
+// Pindah Slides //
+var slideIndex = 1;
+    showDivs(slideIndex);
 
-function nextSlide(n) {
-    showBanner(indexSlide += n);
+function plusDivs(n) {
+    showDivs(slideIndex += n);
 }
 
-function showBanner(indexBanner) {
-    let listImage = document.getElementsByClassName('banner-img');
-    if (indexBanner > listImage.length) indexSlide = 1;
-
-    let index = 0;
-    while (index < listImage.length) {
-        listImage[index].style.display = 'none';
-        index++;
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("banner-img");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length};
+    for(i = 0; i < x.length; i++) {
+        x[i].style.display = 'none';
     }
-    listImage[indexSlide - 1].style.display = 'block';
+    x[slideIndex-1].style.display = "block";
 }
 
-setInterval(() => nextSlide(1), 10000)
+// Auto slide //
+setInterval(() => {
+    plusDivs(1);
+}, 7000)

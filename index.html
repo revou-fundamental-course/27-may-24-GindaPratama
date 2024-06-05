@@ -16,9 +16,9 @@
             </a>
 
             <div class="nav-links">
-                <a class="pr" href="#profile">PROFILE</a>
-                <a class="sk" href="#skill">SKILLS</a>
-                <a class="mes" href="#message">CONTACT</a>
+                <a href="#profile">PROFILE</a>
+                <a href="#skill">SKILLS</a>
+                <a href="#message">CONTACT</a>
             </div>
             <div>
                 <button id="tombol">Your Name</button>
@@ -47,10 +47,8 @@
                     <p>Computer and Network Engineering</p>
                 </div>
                 <div>
-            
-                </div>
-                <div>
-                    <button id="gantiGambar" type="button" onclick="nextSlide(1)">>></button>
+                    <button id="next" onclick="plusDivs(1)">→</button>
+                    <button id="previous" onclick="plusDivs(-1)">←</button>
                 </div>
                 <!-- Profile Picture -->
                 <div class="profile-pic">
@@ -77,13 +75,13 @@
                 <div class="text-overlay">
                     <div class="skl1">
                         <ul>
-                            <li type="square">Troubleshooting</li>
-                            <li type="square">Installation & Configuration Network</li>
-                            <li type="square">Network Monitoring</li>
-                            <li type="square">Microsoft Office</li>
-                            <li type="square">HTML</li>
-                            <li type="square">CSS</li>
-                            <li type="square">JavaSCript</li>
+                            <li>Troubleshooting</li>
+                            <li>Installation & Configuration Network</li>
+                            <li>Network Monitoring</li>
+                            <li>Microsoft Office</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaSCript</li>
                         </ul>
                     </div>    
                 </div>
@@ -102,17 +100,17 @@
                     <form id="formulir">
                         <div class="form-group">
                             <label for="nama" class="">Nama :</label>
-                            <input type="text" id="nama" name="nama" placeholder="Kyle Trin">
+                            <input type="text" id="nama" name="nama" placeholder="Kyle Trin" required>
                         </div>
                         <div class="form-group">
                             <label for="tglLahir" class="">Tanggal Lahir :</label>
-                            <input type="date" id="tglLahir" name="tglLahir"> <br>
+                            <input type="date" id="tglLahir" name="tglLahir" required> <br>
                         </div>
                         <div class="form-group">
                             <label>Jenis Kelamin:</label><br>
                             <input type="radio" id="lakilaki" name="jenisKelamin" value="Laki-laki" required>
                             <label for="lakilaki">Laki-laki</label><br>
-                            <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                            <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan" required>
                             <label for="perempuan">Perempuan</label><br>
                         </div>
                         <div class="form-group">
