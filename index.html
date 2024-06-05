@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="assets/1.png">
+    <link rel="icon" type="image/x-icon" href="assets/favico.png">
 </head>
 <body>
     <!-- Nav -->
@@ -16,9 +16,12 @@
             </a>
 
             <div class="nav-links">
-                <a href="#profile">PROFILE</a>
-                <a href="#skill">SKILLS</a>
-                <a href="#message">CONTACT</a>
+                <a class="pr" href="#profile">PROFILE</a>
+                <a class="sk" href="#skill">SKILLS</a>
+                <a class="mes" href="#message">CONTACT</a>
+            </div>
+            <div>
+                <button id="tombol">Your Name</button>
             </div>
         </div>
     </nav>
@@ -30,9 +33,9 @@
                 <!-- Banner -->
                 <div class="banner-container">
                     <div class="banner-size">
-                        <div class="banner-position">
-                            <img src="assets/banner1.jpg" alt="banner one">
-                        </div>
+                            <img class="banner-img" src="assets/banner1.jpg" alt="banner1">
+                            <img class="banner-img" src="assets/banner2.jpg" alt="banner2">
+                            <img class="banner-img" src="assets/banner3.jpg" alt="banner3">
                     </div>
                 </div>
             </header>
@@ -44,7 +47,10 @@
                     <p>Computer and Network Engineering</p>
                 </div>
                 <div>
-                    <button id="tombol">Ganti nama</button>
+            
+                </div>
+                <div>
+                    <button id="gantiGambar" type="button" onclick="nextSlide(1)">>></button>
                 </div>
                 <!-- Profile Picture -->
                 <div class="profile-pic">
