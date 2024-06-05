@@ -242,6 +242,7 @@ button:hover {
     border-radius: 8px;
     min-width: fit-content;
     font-size: 14px;
+    align-items: center;
 }
 
 /* Footer */
@@ -257,4 +258,89 @@ footer {
     z-index: 3;
     height: 40px;
     text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    nav {
+        font-size: 2.0em;
+    }
+    .nav-container img {
+        width: 70px;
+        height: 70px;
+    }
+    .nav-links {
+        margin-left: -200px;
+    }
+    .nav-links > a {
+        padding: 15px;
+    }
+    #tombol {
+        margin-top: 20px;
+        height: 40px;
+    }
+    .profile-text {
+        left: 480px;
+        top: 300px;
+    }
+    .profile-text > h1 {
+        font-size: 3em;
+        width: 500px;
+    }
+    .profile-text > p {
+        font-size: 2em;
+    }
+    .profile-pic {
+        margin-top: 45px;
+        margin-left: 50.5px;
+    }
+    .p-text {
+        font-size: 2em;
+        width: 700px;
+    }
+    .first-line {
+        margin-left: 300px;
+    }
+    .our-facili {
+        font-size: 2.5em;
+        margin-left: 40px;
+    }
+    .text-overlay {
+        width: 600px;
+    }
+    .skl1 {
+        font-size: 2em;
+    }
+    .mess > h2 {
+        font-size: 2.5em;
+    }
+    .message-us-section {
+        flex-direction: column;
+    }
+    .form-container {
+        margin-bottom: 100px;
+    }
+    .form-container > #formulir {
+        width: 600px;
+        font-size: 2em;
+    }
+    .form-group > input {
+        font-size: 1em;
+    }
+    .form-group > textarea {
+        font-size: 1.5em;
+    }
+    .result-container {
+        width: 670px;
+        margin-bottom: 50px;
+    }
+    footer {
+        font-size: 2em;
+        margin-top: 0px;
+    }
+    footer > p {
+        text-align: center;
+        margin-top: 0px;
+
+    }
 }
