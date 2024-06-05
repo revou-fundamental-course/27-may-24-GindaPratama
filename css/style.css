@@ -86,9 +86,9 @@ nav div a:hover {
 
 /* Ubah nama */
 #tombol {
-    width: 120px;
+    width: 122px;
     left: 90px;
-    top: 15px;
+    top: 10px;
     position: absolute;
     background-color: transparent;
     font-family: sans-serif;
@@ -189,9 +189,11 @@ nav div a:hover {
     padding: 0px;
     margin-left: 40px;
 }
+
 .message-us{
     padding-bottom: 40px;
 }
+
 .message-us-section{
     display: flex;
     flex: 1;
@@ -233,7 +235,8 @@ form {
     border-radius: 5px;
     font-size: 16px;
     color: #000000;
-}   
+}  
+
 button {
     width: 100%;
     padding: 10px;
@@ -318,6 +321,8 @@ footer {
         margin-left: -50px;
     }
     #tombol {
+        font-size: 1px;
+        display: flex;
         margin-top: 10px;
         height: 40px;
         position: absolute;
